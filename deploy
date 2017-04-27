@@ -1,0 +1,14 @@
+ghc -O2 --make -static -optc-static -optl-static main.hs -fvia-C -optl-pthread
+zip haskell-lambda.zip main.js main
+aws lambda create-function \
+  --function-name 'haskell-lambda-test' \
+  --runtime nodejs4.3 \
+  --handler main.main \
+  --description 'haskell on aws lambda' \
+  --publish \
+  --role 'arn:aws:iam::293486771097:role/payment-lambda-uat' \
+  --zip-file "fileb://$(pwd)/haskell-lambda.zip"
+aws lambda update-function-code \
+  --function-name 'haskell-lambda-test' \
+  --zip-file "fileb://$(pwd)/haskell-lambda.zip" \
+  --publish

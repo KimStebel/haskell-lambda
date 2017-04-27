@@ -1,0 +1,7 @@
+aws lambda invoke \
+  --function-name 'haskell-lambda-test' \
+  output.log
+cat output.log
+rm output.log
+echo
+

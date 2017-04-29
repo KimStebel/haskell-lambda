@@ -1,0 +1,5 @@
+rm *.o
+rm *.hi
+rm *.zip
+rm main
+

@@ -1,5 +1,4 @@
 *.zip
 *.o
 *.hi
-main
-
+hsmain

@@ -1,4 +1,4 @@
-ghc -O2 --make -static -optc-static -optl-static main.hs -fvia-C -optl-pthread
+docker run -it --rm -v "$(pwd):/src" haskell:8 ghc  -O2 --make -static -optc-static -optl-static /src/main.hs -fvia-C -optl-pthread
 zip haskell-lambda.zip main.js main
 aws lambda create-function \
   --function-name 'haskell-lambda-test' \

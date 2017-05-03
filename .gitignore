@@ -1,3 +1,5 @@
+haskell-lambda/dist
+haskell-lambda/.stack-work
 *.zip
 *.o
 *.hi

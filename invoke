@@ -1,7 +1,7 @@
 aws lambda invoke \
   --function-name 'haskell-lambda-test' \
   output.log
-cat output.log
+cat output.log | jq '.'
 rm output.log
 echo
 

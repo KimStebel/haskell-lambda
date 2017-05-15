@@ -1,0 +1,2 @@
+cp haskell-lambda/.stack-work/install/x86_64-linux-dk405abe1d2b5279eeb8451f40a6534c31/lts-8.13/8.0.2/bin/haskell-lambda-exe hsmain && \
+zip haskell-lambda.zip main.js hsmain

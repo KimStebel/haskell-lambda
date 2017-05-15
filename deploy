@@ -1,5 +1,3 @@
-docker run -it --rm -v "$(pwd):/src" haskell:8 ghc -O2 --make -static -optc-static -optl-static /src/hsmain.hs -optl-pthread && \
-zip haskell-lambda.zip main.js hsmain && \
 aws lambda create-function \
   --function-name 'haskell-lambda-test' \
   --runtime nodejs4.3 \

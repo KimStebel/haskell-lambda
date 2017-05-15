@@ -66,4 +66,4 @@ extra-package-dbs: []
 # compiler-check: newer-minor
 docker:
     enable: true
-    
+    image: bbb246fb6375

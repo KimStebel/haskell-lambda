@@ -1,0 +1,4 @@
+cd haskell-lambda
+stack build
+
+#docker run -it --rm -v "$(pwd):/src" haskell:8 ghc -O2 --make -static -optc-static -optl-static /src/hsmain.hs -optl-pthread

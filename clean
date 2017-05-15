@@ -1,5 +1,5 @@
-rm *.o
-rm *.hi
+#!/bin/bash
+
 rm *.zip
 rm hsmain
 cd haskell-lambda

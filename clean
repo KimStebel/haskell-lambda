@@ -2,4 +2,5 @@ rm *.o
 rm *.hi
 rm *.zip
 rm hsmain
-
+cd haskell-lambda
+stack clean
